@@ -40,7 +40,7 @@ Use Node 24, then run these three commands:
 ```sh
 git clone https://github.com/coassemble/embed-starter
 cd embed-starter && cp .env.example .env    # paste your key into .env
-npm install && npm run dev                  # opens a page with your course in it
+npm install && COASSEMBLE_API_BASE='https://api.coassemble.com/api' npm run dev    # opens your course
 ```
 
 The local page opens automatically. If your terminal cannot open a browser, open the URL it prints.
