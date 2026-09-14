@@ -1,0 +1,7 @@
+{
+  "name": "embed-starter-release-smoke-proposal",
+  "private": true,
+  "type": "module",
+  "devDependencies": { "@playwright/test": "1.63.0" },
+  "scripts": { "smoke": "playwright test --config=playwright.config.mjs" }
+}
