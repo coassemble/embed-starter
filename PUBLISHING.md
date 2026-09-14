@@ -1,6 +1,6 @@
 # Publish checklist and exact commands
 
-Prepared locally for ENG-11717. No repository has been created or pushed, and no workflow has been enabled.
+Prepared and committed locally for ENG-11717. The public GitHub repository has not been created, nothing has been pushed, and no workflow has been enabled.
 
 Two explicit approvals remain: publish these prepared files to the public repository `coassemble/embed-starter` on `main`; and install the prepared production-release CI workflow under Author `AGENTS.md` Rule 13, including its dedicated Sandbox workspace/secret configuration. These are publication and CI activation decisions. Local file preparation, checks and browser proof can continue without another approval. Keep `.env` and `node_modules` excluded by `.gitignore`.
 
@@ -18,9 +18,7 @@ After approval to create the public repository:
 
 ```sh
 cd /Volumes/Development/embed-starter
-git init --initial-branch=main
-git add .
-git commit -m "Add working Coassemble course embed starter"
+git status --short
 gh repo create coassemble/embed-starter --public --source=. --remote=origin --push --description "A server-side Coassemble course embed starter"
 gh repo view coassemble/embed-starter --json url,visibility,defaultBranchRef
 ```
